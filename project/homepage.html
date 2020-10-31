@@ -1,13 +1,100 @@
 <!DOCTYPE html>
 <head>
     <title>Niara Phoenix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-<h1>Niara Phoenix</h1>
-<h2>"I don't have a favorite quote yet"</h2>
-    <img src= "images/headshot_placeholder.jpg" alt= "Niara Headshot" width="400" height= 300>
-<a href= "about_me.html" target= "_blank">About Me</a> 
-<a href= "resume.html" target="_blank">Check out my Resume!</a>
+<style>
+    body,h1,h2.h3 {font-family: "Montserrat"; color: "white";}
+    .bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/headshot_placeholder.jpg);
+  min-height: 100%;
+}
+</style>
+<section>
+<header>
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href= "#Me" >About Me</a> 
+    </nav>
+</header>
+
+<body class= "body-background">
+<div class = "text-center" id= top-banner><h1>Welcome.</h1></div>
+<div class= "text-center" id=quote>"I refuse to prove I exist, for proof denies faith, and without faith I am nothing"</div>
+    
+    <section class =w3-third><img src= "images/headshot_placeholder.jpg" alt= "Niara Headshot" width=400px height= 400px>
+   
+<!--<section class= "w3-third">-->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+    
+        <div class="w3-section">
+          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Maryland, US</p>
+          <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 2409388488</p>
+          <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: naphoeni@syr.edu</p>
+        </div><br>
+    
+    </section>
+
+    <div>
+        <section id="Me"><h2>About Me</h2></section>
+    <!--<img src= "images/AtPodium.jpg" alt="Me(middle) at podium" width =400 height=300 >-->
+    <section>
+        <h3>Mission</h3>
+        <p>I am currently searching for a full-time work opportunity at a company with strong moral values and a dedication to making the worls better in whatever way possible</p>
+    </section>
+    <aside class="row" id="card">
+        <div class="col-2"> 
+            <ul>
+                <h3>Fields of Interest</h3> 
+                <li>Information Systems</li>
+                <li>Systems Administration</li>
+                <li>Network Administration</li>
+                <li>Database Administration</li>
+                <li>Digital Forensics</li>
+                <li>Human Resources</li>
+            </ul>
+        </div>
+
+            <div class="col-2">
+                <ul>
+                    <h3>Locations</h3>
+                    <li>Maryland</li>
+                    <li>Boston</li>
+                    <li>Washington, DC</li>
+                    <li>Northern Virgina</li>
+                </ul>
+            </div>
+        </aside>
+        
+        <section>
+            <!--<p>Guess that Quote! Email me:</p>-->
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </p>
+            </form>
+        </section>
+    
+    
 </body>
+</section>
 </html>
 

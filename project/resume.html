@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <head>
     <title>Niara Phoenix Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
-<header>
-    <h1>Niara Phoenix</h1>
-    <img src= "images/SyracuseHOL.jpg" alt= "Syracuse Hall of Languages">
+<style>
+    nav{background-image: url("images/SyracuseHOL.jpg"); background-color: orange; height: 200px; width: 100%;}
+    body,h1,h2{font-family: "Montserrat"; background-color: black; color: white;}
+</style>
+<section >
+<header>   
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+
 </header>
 
 <body>
@@ -16,22 +30,26 @@
         <li><a href= "projects.html" target="_blank">Projects</a></li>
         </ul>
     </aside>
-    <section>
-    <h2>Academics</h2>
-    <p>Syracuse University School of Engineering B.S. Systems Information Science '21 <br> Syracuse University Maxwell School of Citizenship and Public Affairs B.A. Sociology '21 <br> Syracuse University College of Arts & Sciences B.A. Forensic Science '21 </p>
-    </section>
-    <section>
+        <section>
+            <h2>Academics</h2>
+            <p>Syracuse University School of Engineering B.S. Systems Information Science '21 <br> Syracuse University Maxwell School of Citizenship and Public Affairs B.A. Sociology '21 <br> Syracuse University College of Arts & Sciences B.A. Forensic Science '21 </p>
+        </section>
+    
     <h2>Proficiencies</h2>
-    <p>C++, Java, Linux OS, Unix OS, SQL, MATLAB, HTML, Microsoft Office, Visual Studio Code, Visio, DrJava, MySQL, Oracle VM Virtual Box</p>
-    </section>
-    <a href="media/2020Resume.pdf" target="_blank">click for a pdf of my full resume</a>
-    <aside>
-    <h2>Experience</h2>
-    <p>Student Supervisor <br> Syracuse University 2017-present</p>
-    <p>Head of Programming <br> Unicef at Syracuse University 2018-2019</p>
-    <p>Medical Observer <br> Onondaga County Medical Examiner's Office December 2018</p>
-    <p>Veterinary Intern <br> Seneca Hills Animal Hospital 2015-2016</p>
-    <p>Government Intern <br> United States House of Representatives 2014-2015</p>
+        <section class ="row">
+            <div class="rounded-border">C++</div>
+            <div class= "rounded-border">Java</div> <div class= "rounded-border">Linux OS</div> <div class="rounded-border"> OS</div> <div class="rounded-border">SQL</div> <div class="rounded-border">MATLAB</div> <div class="rounded-border">HTML</div> <div class= "rounded-border">Microsoft Office</div> <div class="rounded-border">Visual Studio Code</div> <div class="rounded-border">Visio</div> <div class="rounded-border">DrJava</div> <div class="rounded-border">MySQL</div> <div class="rounded-border">Oracle VM Virtual Box</div>
+        
+        </section>
+    <a href="media/2020Resume.pdf" target="_blank">full resume</a>
+    <h2 class= "text-center">Experience</h2>
+    <aside class="row" id="carousel">
+        <div class= "col-1">Student Supervisor <br> Syracuse University <br>2017-present</div>
+        <div class= "col-1"><p>Head of Programming <br> Unicef at Syracuse University<br>2018-2019</p></div>
+        <div class="col-1"><p>Medical Observer <br> Onondaga County Medical Examiner's Office<br>December 2018</p></div>
+        <div class = "col-1"><p>Veterinary Intern <br> Seneca Hills Animal Hospital<br>2015-2016</p></div>
+        <div class ="col-1"><p>Government Intern <br> United States House of Representatives <br>2014-2015</p></div>
     </aside>
 </body>
+</section>
 </html>
