@@ -1,0 +1,75 @@
+.page-container {
+    background: linear-gradient(180deg, #0e0d0d 50%, #163d3d 70%) ;
+    background-repeat: no-repeat;width: 100%; height: 100%; margin: 0 auto; padding: 0;}
+.body-background{
+    background-color: black;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+  }
+
+
+  .row {
+    display: flex;
+    flex-flow: row wrap;
+  }
+ 
+  .col {
+    display: flex;
+  }
+  
+  .col-1 {
+    flex: 1;
+  }
+
+  .col-2 {
+    flex: 2;
+    
+  }
+  
+  .col-3 {
+    flex: 3;
+  }
+  .col-4{
+      flex:4;
+  }
+  
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  .rounded-border {
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    margin-right:1em;
+    
+  }
+  #project .row{
+      text-align: justify;
+      border: 6px solid rgb(15, 15, 15); padding: 40px; background-color: #ccc; color: black; margin: 1.5em;
+  }
+  #card {
+    border: 1px solid #ccc; margin-top: 4em;
+  }
+  .p-1 {
+    padding: 10px;
+    background-color: #ccc;
+    color: black;
+  }  
+  
+  #top-banner {font-size: 35pt;border: 4px solid #ccc;}
+  #quote{margin-top: 4em; margin-bottom: 4em; font-size: 24pt; font-weight: 100;}
+  #banner-img {background-image:url("images/SyracuseHOL.jpg"); background-color: orange; height: 405px; width: 100%;}
+  #research-img1 {margin-top: 4em; background-image:url("images/capital-punishment.jpg"); background-color: black; height:400px; width: 100%; background-position: left; background-repeat: no-repeat;}
+  #carousel .col-1 {margin: 1em 0 1em 1em; padding: 2em; border: 1px solid #ccc;}
