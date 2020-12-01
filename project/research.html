@@ -2,52 +2,80 @@
 <head>
     <title>Niara Phoenix Research</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body,h1,h2{font-family: "Montserrat"; background-color: black; color: white;}
+        body,h1,h2{font-family: "Montserrat"; background-color: slategray; color: black;}
+        a.btn{background-color:silver;}
+        img.card-img-bottom{height:20rem;}
     </style>
 </head>
 
-<header>
+<header style="margin-bottom:5em;">
     
-    <nav>
-        <a href="homepage.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="research.html">Research</a>
-        <a href="projects.html">Projects</a>
-    </nav>
-    <h1>Research</h1>
-</header>
-<body>
-    <div class="col">
-    <div id="research-img1" ></div>
-    
-    <section class="row">
-        <p>Capital Punishment has been a major aspect of almost every society since the beginning
-            of civilization. Up until the past two centuries, capital punishment has been a widely accepted
-            and even enjoyable part of the criminal justice system. In this paper, I explore the evolution of capital punishment and how it has disproportionally affected marginalized communities over centuries.<br><a href= "media/Capital Punishment.pdf" target="_blank">full paper</a> </p>
-    </section>
-    </div>
-    <div class="col">
-    <img src= "images/workforce.png" alt=" balanced scale clipart" height= 400 width=430 >
-    
-    <section class="row">
-        <p>As society progresses, we find ourselves in the continuation of the equal rights movement
-            meant to minimize the gender and racial equality gap. However, we have entered a transition
-            period where people have started to become complacent with the changes already made in
-            society even though they do not reflect true equality. After conducting multiple interviews across the Syracuse University campus over the span of four months, I used my findings to analyze the workforce relationships between men and women. <br> <a href= "media/Final Paper.pdf" target="_blank">full paper</a></p>
-    </section>
-</div>
-
-    <section class="col">
-        <img src= "images/hitman.jpg" alt="sillhoutte of James Bond-esque man" height=400 width=430 >
-        
-        <div class= "row">
-            <p>In my favorite research to date, I combined my interest in forensics and sociology to use my knowledge in performance psychology to identify the occupational stress accured by professional hitmen and diagnose methods to address these issues.<br><a href= "media/PoPFinal.pdf" target="_blank">full paper</a></p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Research</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="homepage.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" href="resume.html">Resume</a>
+          </div>
         </div>
-    </section>
+      </nav>
     
+</header>
+<body class="container-fluid"style="margin-bottom:5em;">
+
+    <div class="card-deck " style="justify-content:center;">
+        <div class="card">
+            <img class="card-img-bottom img-thumbnail" src="images/autopsy-observation.jpg" alt="Me in scrubs at the Medical Examiner's office" >
+          <div class="card-body ">
+            <p class="card-text">I spent a day observing autopsies and it was one of my most influential learning experiences. At the time, I was also enrolled in Forensic Pathology at SU, and while the information was very exciting, I was worried that everything would be different in the field. During the several autopsies I witnessed, it was baffling to realize how much I knew in terms of determining cause of death. </p>
+            <a href="#" class="btn stretched-link">full Paper</a>
+          </div>
+          
+        </div>
+        <div class="card">
+            <img class="card-img-bottom img-thumbnail" src="images/capital-punishment.jpg" alt="courtroom gavel" height="400px" >
+          <div class="card-body ">
+            <p class="card-text">Capital Punishment has been a major aspect of almost every society since the beginning
+                of civilization. Up until the past two centuries, capital punishment has been a widely accepted
+                and even enjoyable part of the criminal justice system. In this paper, I explore the evolution of capital punishment and how it has disproportionally affected marginalized communities over centuries.</p>
+                <a href="media/Capital Punishment.pdf" class="btn stretched-link" >full Paper</a>
+          </div>
+        </div>
+        <div class="card">
+            <img class="card-img-bottom img-thumbnail" src="images/workforce.png" alt="Businesswoman" height="400px">
+          <div class="card-body ">
+            <p class="card-text">As society progresses, we find ourselves in the continuation of the equal rights movement
+                meant to minimize the gender and racial equality gap. However, we have entered a transition
+                period where people have started to become complacent with the changes already made in
+                society even though they do not reflect true equality. After conducting multiple interviews across the Syracuse University campus over the span of four months, I used my findings to analyze the workforce relationships between men and women.</p>
+                <a href= "media/Final Paper.pdf" class="btn stretched-link" target="_blank">full paper</a>
+          </div>
+        </div>
+        <div class="card">
+            <img class="card-img-bottom img-thumbnail" src="images/hitman.jpg" alt="James Bond-esque man holding gun">
+          <div class="card-body ">
+            <p class="card-text">In my favorite research to date, I combined my interest in forensics and sociology to use my knowledge in performance psychology to identify the occupational stress accured by professional hitmen and diagnose methods to address these issues.</p>
+            <a href= "media/PoPFinal.pdf" class="btn stretched-link" target="_blank">full paper</a>
+            
+          </div>
+        </div>
+        
+      </div>
+
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

@@ -1,43 +1,80 @@
 <!DOCTYPE html>
 <head>
     <title>Niara Phoenix Projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .page-container{
-        
-        color: white;
-        font-family: "Montserrat";
-    }
-    
+        body{background-image: linear-gradient(to bottom right, lightblue, pink);display:grid; place-items:center;}
+        div.card{margin:auto; border-radius: 15px 50px; scroll-padding: 2em;}
+
     </style>
 </head>
 
+<section>
 <header>
-    <nav>
-        <a href="homepage.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="research.html">Research</a>
-        <a href="projects.html">Projects</a>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Welcome</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="homepage.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="resume.html">Resume</a>
+            <a class="nav-link" href="research.html">Research</a>
+          </div>
+        </div>
+      </nav>
 </header>
 
-<body class="page-container">
+<body class="body-background container-fluid" style="margin-bottom:35em;" >
+    
     <!--maybe add a click-to-flip function on these boxes and add images-->
-    <h1 style="text-align:center; font-weight: 100; font-size: 30pt;">My Projects</h1>
-    <section class="col" id= "project" style="display: flex;justify-content: center;align-items: center;
-    height: 100vh;">
-        <div class="row">
-            <strong>Food Donation System MS Visio August 2020- Present</strong><br>
-            Worked on a team of 3 to design a system for scheduling food donations to local shelters. Created high-level system architecture including class diagrams, use-case diagrams, and CRC cards.
-        </div>
-        <div class="row">
-            <strong>Recruitment Database SQL Server May 2020</strong><br>Created a database to for a candidate’s journey through the entire application process.Conceptualized the entire process with an ERD and then implemented the code 
-        </div>
-        <div class="row">
-            <strong>Mancala C++ March 2018</strong><br>Programmed the board game Mancala, incorporating arrays and structs. Implemented a multiplayer functionality 
-        </div>
+    <h1 style="text-align:center; font-weight: 100; font-size: 36pt;margin-bottom:3em; margin-top:2em;">My Projects</h1>
+
+       <div class="card mb-3 sticky-top col-lg-10 " style="border-radius: 15px 50px;">
+            <img src="images/foodpantry.png" class="rounded-pill card-img-top" alt="various fruits and vegetables" >
+            <div class="card-body rounded-pill"style="background-color: aliceblue; ">
+              <h5 class="card-title">Food Donation System MS Visio November 2020</h5>
+              <p class="card-text">Worked on a team of 3 to design a system for scheduling food donations to local shelters. Created high-level system architecture including class diagrams, use-case diagrams, and CRC cards.</p>
+              
+            </div>
+          </div>
+          <div class="card mb-3 sticky-top col-lg-10" >
+            <img src="images/map.png" class="rounded-pill card-img-top" alt="view of a residential road">
+            <div class="card-body rounded-pill"style="background-color: aliceblue;">
+              <h5 class="card-title">Criminal Alert App MS Visio</h5>
+              <p class="card-text">The Criminal Alert App was a project idea passed on from another team for design completion. Given their software specification requirements, my team was tasked with finishing the software design.</p>
+            </div>
+          </div>
+
+
+        <div class="card mb-3 sticky-top col-lg-10 ">
+            <img src="images/recruitment.png" class="card-img-top rounded-pill" alt="basic flowchart image">
+            <div class="card-body rounded-pill"style="background-color: aliceblue;">
+              <h5 class="card-title">Recruitment Database SQL Server May 2020</h5>
+              <p class="card-text">Created a database to for a candidate’s journey through the entire application process.Conceptualized the entire process with an ERD and then implemented the code in sql.  </p>
+            </div>
+          </div>
+       
+
+        <div class="card mb-3 sticky-top col-lg-10 " >
+            <img src="images/mancala.jpg" class="rounded-pill card-img-top" alt="mancala board game">
+            <div class="card-body rounded-pill "style="background-color:aliceblue;">
+              <h5 class="card-title">Mancala Board Game C++ Visual Studio March 2018</h5>
+              <p class="card-text">Programmed the board game Mancala, incorporating arrays and structs. Implemented a multiplayer functionality </p>
+             
+            </div>
+          </div>
+    
     </section>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
 </body>
+</section>
+</html>
