@@ -13,6 +13,7 @@
         
         body,h1,h2, aside,section{font-family: "Montserrat"; background-color:rgb(178, 194, 194); color: darkslategrey;display:grid; }
         a{color:black; }
+        div.card{background-color:rgb(178, 194, 194); border-color:darkslateblue; color:darkslategrey; border: 2px solid; place-content:center; padding-left:1em;}
     </style>
 
 </head>
@@ -53,15 +54,15 @@
         </section>
     <a href="media/2020Resume.pdf" class="btn btn-secondary text-left col-1 rounded-border" target="_blank">full resume</a>
     <h2 class= "text-center">Experience</h2>
-    <div class="card-group">
-        <aside class="row" id="carousel" style="justify-content: center;">
-            <div class= "col-2">Student Supervisor <br> Syracuse University <br>2017-present</div>
-            <div class= "col-2"><p>Head of Programming <br> Unicef at Syracuse University<br>2018-2019</p></div>
-            <div class="col-2"><p>Medical Observer <br> Onondaga County Medical Examiner's Office<br>December 2018</p></div>
-            <div class = "col-2"><p>Veterinary Intern <br> Seneca Hills Animal Hospital<br>2015-2016</p></div>
-            <div class ="col-2"><p>Government Intern <br> United States House of Representatives <br>2014-2015</p></div>
+    <!--<div class="card-group">-->
+        <aside class="card-deck " id="carousel" style="justify-content: center;">
+            <div class= "card shape "><p><strong>Student Supervisor</strong> <br> Syracuse University <br>2017-present</p></div>
+            <div class= "card shape "><p><strong>Head of Programming</strong> <br> Unicef at Syracuse University<br>2018-2019</p></div>
+            <div class="card shape"><p><strong>Medical Observer</strong> <br> Onondaga County Medical Examiner's Office<br>December 2018</p></div>
+            <div class = "card shape"><p><strong>Veterinary Intern</strong> <br> Seneca Hills Animal Hospital<br>2015-2016</p></div>
+            <div class ="card shape"><p><strong>Government Intern </strong><br> United States House of Representatives <br>2014-2015</p></div>
         </aside>
-    </div>
+   <!-- </div>-->
 
     <aside style="margin-top:5em;">
         <h2>My Work Samples</h2>
